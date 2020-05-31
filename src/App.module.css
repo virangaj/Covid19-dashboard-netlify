@@ -39,6 +39,7 @@ body {
   font-size: 28px;
   color: #1e7cb3;
 }
+
 .topic h1 {
   text-align: center;
   font-size: 35px;
@@ -253,6 +254,8 @@ local style */
   .localChart,
   .localData {
     width: 100%;
+    padding: 0;
+    margin: auto;
   }
   .topic h1 {
     font-size: 25px;

@@ -1,9 +1,9 @@
 .chart {
-  width: 400px;
+  width: 500px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .chart {
-    width: 350px;
+    width: 370px;
   }
 }
 @media only screen and (max-width: 500px) {

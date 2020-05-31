@@ -102,3 +102,16 @@
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 380px) {
+  .totalCount,
+  .healthyCount,
+  .deathCount,
+  .total,
+  .healthy,
+  .death {
+    font-size: 14px;
+  }
+  .container h2 {
+    font-size: 12px;
+  }
+}

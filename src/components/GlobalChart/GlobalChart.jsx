@@ -59,7 +59,7 @@ const Chart = ({ info: { data } }) => {
 
   return (
     <div className={styles.chart}>
-      <Pie data={chartData} width={400} height={400} options={{}} />
+      <Pie data={chartData} width={500} height={500} options={{}} />
     </div>
   );
 };
