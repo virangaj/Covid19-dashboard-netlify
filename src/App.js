@@ -30,7 +30,8 @@ class App extends React.Component {
       <div className={styles.container}>
         <div className={styles.topic}>
           <h1>
-            C<i className="fas fa-virus"></i>VID 19 LIVE DASHBOARD
+            C<i className="fas fa-virus"></i>VID 19 LIVE SITUATIONAL ANALYSIS
+            DASHBOARD
           </h1>
         </div>
         <h2 className={styles.subHead}>Local Health Figures</h2>
