@@ -13,7 +13,7 @@ const Footer = ({ info: { data } }) => {
       <div className={styles.date}>
         <p>Last update : {date}</p>
         <p>
-          Source :{" "}
+          Powered By :{" "}
           <a href="https://www.hpb.health.gov.lk/api/get-current-statistical">
             https://www.hpb.health.gov.lk/api/get-current-statistical
           </a>{" "}
