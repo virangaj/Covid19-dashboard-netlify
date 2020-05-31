@@ -1,0 +1,244 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(white, white, white);
+}
+
+.container {
+  padding-top: 10px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(226, 225, 225, 0.247);
+}
+.topic {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 10px;
+  justify-content: center;
+}
+.subHead {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  margin-top: 10px;
+  padding: 2px 0 2px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+.topic h1 {
+  text-align: center;
+  font-size: 45px;
+  padding: 10px 0 10px 0;
+  background: linear-gradient(to right, #1e7cb3, #09090e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 
+local style */
+.tabLocal {
+  display: flex;
+  width: 100%;
+  padding: 10px 65px 10px 65px;
+
+  width: 90%;
+  border-radius: 10px;
+  margin: auto;
+  padding-top: 10px;
+
+  align-items: center;
+  /* background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 100; */
+}
+.localDaily,
+.localChart,
+.localData {
+  display: flex;
+  justify-content: center;
+  padding: 0 5px 0 5px;
+}
+
+.localData {
+  flex: 1;
+  align-items: center;
+  border: 2px solid #00ccff;
+  border-bottom: 10px solid #00ccff;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.localChart {
+  flex: 1;
+  align-items: center;
+}
+
+.localDaily {
+  flex: 1;
+  align-items: center;
+  border: 2px solid #00ccff;
+  border-bottom: 10px solid #00ccff;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+/*------------------------------------------------------------*/
+/* 
+local style */
+.tabGlobal {
+  display: flex;
+  width: 90%;
+  padding: 10px 65px 10px 65px;
+
+  width: 90%;
+  border-radius: 10px;
+  margin: auto;
+  padding-top: 10px;
+  align-items: center;
+
+  /* background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 100; */
+}
+.globalDaily,
+.globalChart,
+.globalData {
+  display: flex;
+  justify-content: center;
+  padding: 0 5px 0 5px;
+}
+.globalData {
+  flex: 1;
+  align-items: center;
+  border: 2px solid #00ccff;
+  border-bottom: 10px solid #00ccff;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.globalChart {
+  flex: 1;
+  align-items: center;
+}
+
+.globalDaily {
+  flex: 1;
+  align-items: center;
+  border: 2px solid #00ccff;
+  border-bottom: 10px solid #00ccff;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+/*------------------------------------------------------------*/
+
+/*animation letter*/
+.animation_area {
+  display: flex;
+  z-index: -2;
+}
+.box_area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.box_area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  font-size: 45px;
+  animation: animate 20s linear infinite;
+  bottom: -150px;
+  color: rgba(255, 0, 0, 0.555);
+
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+}
+
+.box_area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.box_area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+.box_area li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+.box_area li:nth-child(4) {
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.box_area li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+.box_area li:nth-child(6) {
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3.5s;
+}
+.box_area li:nth-child(7) {
+  left: 50%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 2.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+/*-----------------------------*/
+@media only screen and (max-width: 1260px) {
+  .tabGlobal,
+  .tabLocal {
+    flex-direction: column;
+  }
+  .globalDaily,
+  .globalChart,
+  .globalData,
+  .localDaily,
+  .localChart,
+  .localData {
+    width: 90%;
+  }
+}
