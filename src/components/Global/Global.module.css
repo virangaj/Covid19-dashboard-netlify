@@ -10,7 +10,7 @@
 }
 .label {
   font-size: 20px;
-  color: rgb(29, 29, 29);
+  color: grey;
 }
 .totalCount,
 .healthyCount,
@@ -65,15 +65,41 @@
   justify-content: center;
 }
 
-.card {
-  margin: 0 2% !important;
+@media only screen and (max-width: 1300px) {
+  .totalCount,
+  .healthyCount,
+  .deathCount {
+    font-size: 25px;
+  }
+  .label {
+    font-size: 18px;
+  }
+  .total,
+  .healthy,
+  .death {
+    font-size: 25px;
+    display: inline;
+  }
+  .container h2 {
+    font-size: 20px;
+  }
 }
-.infected {
-  border-bottom: 10px solid rgb(20, 109, 187);
-}
-.recovered {
-  border-bottom: 10px solid rgb(19, 143, 3);
-}
-.deaths {
-  border-bottom: 10px solid rgb(128, 0, 0);
+@media only screen and (max-width: 500px) {
+  .totalCount,
+  .healthyCount,
+  .deathCount {
+    font-size: 20px;
+  }
+  .label {
+    font-size: 15px;
+  }
+  .total,
+  .healthy,
+  .death {
+    font-size: 20px;
+    display: inline;
+  }
+  .container h2 {
+    font-size: 16px;
+  }
 }

@@ -1,11 +1,14 @@
-.container {
-  display: flex;
-  justify-content: center;
-  width: 65%;
+.chart {
+  width: 400px;
 }
 
-@media only screen and (max-width: 770px) {
-  .container {
-    width: 100%;
+@media only screen and (max-width: 1300px) {
+  .chart {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .chart {
+    width: 200px;
   }
 }

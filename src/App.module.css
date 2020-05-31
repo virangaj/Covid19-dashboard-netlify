@@ -69,6 +69,7 @@ local style */
   display: flex;
   justify-content: center;
   padding: 0 5px 0 5px;
+  width: 90%;
 }
 
 .localData {
@@ -116,6 +117,7 @@ local style */
   display: flex;
   justify-content: center;
   padding: 0 5px 0 5px;
+  width: 90%;
 }
 .globalData {
   flex: 1;
@@ -228,17 +230,20 @@ local style */
 }
 
 /*-----------------------------*/
-@media only screen and (max-width: 1260px) {
+
+@media only screen and (max-width: 1100px) {
   .tabGlobal,
   .tabLocal {
     flex-direction: column;
   }
+}
+@media only screen and (max-width: 500px) {
   .globalDaily,
   .globalChart,
   .globalData,
   .localDaily,
   .localChart,
   .localData {
-    width: 90%;
+    width: 100%;
   }
 }
