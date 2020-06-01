@@ -7,7 +7,12 @@ const Localdata = ({ info: { data } }) => {
   if (!data) {
     return "loading..";
   }
-
+  var death = ((data?.local_deaths / data?.local_total_cases) * 100).toFixed(2);
+  var recover = (
+    (data?.local_recovered / data?.local_total_cases) *
+    100
+  ).toFixed(2);
+  console.log(death);
   return (
     <div className={styles.container}>
       <div>
@@ -35,7 +40,8 @@ const Localdata = ({ info: { data } }) => {
           end={data.local_recovered}
           duration={2.5}
           eparator=","
-        />
+        />{" "}
+        - {recover}%
       </div>
 
       <div className={styles.death}>
@@ -48,7 +54,8 @@ const Localdata = ({ info: { data } }) => {
           end={data.local_deaths}
           duration={2.5}
           eparator=","
-        />
+        />{" "}
+        - {death}%
       </div>
     </div>
   );

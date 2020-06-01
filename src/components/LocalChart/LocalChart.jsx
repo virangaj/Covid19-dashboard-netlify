@@ -4,57 +4,30 @@ import styles from "./LocalChart.module.css";
 const Chart = ({ info: { data } }) => {
   //console.log(data);
   //console.log(data?.local_new_cases);
-  const [chartData, setChartData] = useState({
-    labels: ["New", "Active", "Deaths", "Recovered"],
-    datasets: [
-      {
-        label: "Local Covid Patients",
+  const [chartData, setChartData] = useState(
+    useLayoutEffect(() => {
+      setChartData({
+        labels: ["Active", "Deaths", "Recovered"],
+        datasets: [
+          {
+            label: "Local Covid Patients",
 
-        data: [
-          data?.local_new_cases,
-          // this.props.totalCases,
-          // this.props.death,
-          // this.props.recovered,
+            data: [
+              data?.local_active_cases,
+              data?.local_deaths,
+              data?.local_recovered,
+            ],
 
-          750,
-          20,
-          700,
+            backgroundColor: [
+              "rgb(20, 109, 187)",
+              "#ff8484",
+              "rgb(27, 187, 6)",
+            ],
+          },
         ],
-
-        backgroundColor: [
-          "#6b85de",
-          "rgb(20, 109, 187)",
-          "#ff8484",
-          "rgb(27, 187, 6)",
-        ],
-      },
-    ],
-  });
-
-  useLayoutEffect(() => {
-    setChartData({
-      labels: ["New", "Active", "Deaths", "Recovered"],
-      datasets: [
-        {
-          label: "Local Covid Patients",
-
-          data: [
-            data?.local_new_cases,
-            data?.local_active_cases,
-            data?.local_deaths,
-            data?.local_recovered,
-          ],
-
-          backgroundColor: [
-            "#6b85de",
-            "rgb(20, 109, 187)",
-            "#ff8484",
-            "rgb(27, 187, 6)",
-          ],
-        },
-      ],
-    });
-  }, [data]);
+      });
+    }, [data])
+  );
 
   return (
     <div className={styles.chart}>

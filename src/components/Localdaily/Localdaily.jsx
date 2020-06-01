@@ -7,7 +7,10 @@ const Localdaily = ({ info: { data } }) => {
   if (!data) {
     return "loading..";
   }
-
+  var active = (
+    (data?.local_active_cases / data?.local_total_cases) *
+    100
+  ).toFixed(2);
   return (
     <div className={styles.container}>
       <div>
@@ -35,7 +38,8 @@ const Localdaily = ({ info: { data } }) => {
           end={data.local_active_cases}
           duration={2.5}
           separator=","
-        />
+        />{" "}
+        - {active}%
       </div>
       <div className={styles.death}>
         <i className="fas fa-heart-broken"></i>{" "}

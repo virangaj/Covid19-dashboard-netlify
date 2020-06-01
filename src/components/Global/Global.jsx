@@ -8,7 +8,14 @@ const Global = ({ info: { data } }) => {
   if (!data) {
     return "loading..";
   }
-
+  var death = ((data?.global_deaths / data?.global_total_cases) * 100).toFixed(
+    2
+  );
+  var recover = (
+    (data?.global_recovered / data?.global_total_cases) *
+    100
+  ).toFixed(2);
+  console.log(death);
   return (
     <div className={styles.container}>
       <div>
@@ -36,7 +43,8 @@ const Global = ({ info: { data } }) => {
           end={data.global_recovered}
           duration={2.5}
           separator=","
-        />
+        />{" "}
+        - {recover}%
       </div>
 
       <div className={styles.death}>
@@ -49,7 +57,8 @@ const Global = ({ info: { data } }) => {
           end={data.global_deaths}
           duration={2.5}
           separator=","
-        />
+        />{" "}
+        - {death}%
       </div>
     </div>
   );

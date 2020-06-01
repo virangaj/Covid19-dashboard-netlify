@@ -35,35 +35,42 @@ class App extends React.Component {
           </h1>
         </div>
         <h2 className={styles.subHead}>Health Figures in Sri Lanka</h2>
-
+        <br />
         <div className={styles.tabLocal}>
           <div className={styles.localData}>
             <Localdata info={this.state.info} />
           </div>
+          <br />
           <div className={styles.localChart}>
             <LocalChart info={this.state.info} />
           </div>
+          <br />
           <div className={styles.localDaily}>
             <Localdaily info={this.state.info} />
           </div>
+          <br />
         </div>
         {/* ------------------------------------------------------ */}
 
         <h2 className={styles.subHead}>Global Health Figures</h2>
+        <br />
         <div className={styles.tabGlobal}>
           <div className={styles.globalData}>
             <Global info={this.state.info} />
           </div>
+          <br />
           <div className={styles.globalChart}>
             <GlobalChart info={this.state.info} />
           </div>
+          <br />
           <div className={styles.globalDaily}>
             <GlobalDaily info={this.state.info} />
           </div>
+          <br />
         </div>
         {/* ------------------------------------------------------ */}
         {/* animation */}
-        {/* <div className={styles.animation_area}>
+        <div className={styles.animation_area}>
           <ul className={styles.box_area}>
             <li>
               <i className="fas fa-virus"></i>
@@ -87,7 +94,7 @@ class App extends React.Component {
               <i className="fas fa-virus"></i>
             </li>
           </ul>
-        </div> */}
+        </div>
         {/* ------------------------------------------------------ */}
         <Footer info={this.state.info} />
       </div>

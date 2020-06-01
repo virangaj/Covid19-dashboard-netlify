@@ -51,6 +51,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.topic i {
+  background: linear-gradient(to right, #f5000096, #ff1313c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* 
 local style */
@@ -183,10 +188,10 @@ local style */
   width: 25px;
   height: 25px;
   font-size: 45px;
-  animation: animate 20s linear infinite;
+  animation: animate 25s linear infinite;
   bottom: -150px;
-  color: rgba(255, 0, 0, 0.555);
-
+  color: rgba(255, 0, 0, 0.37);
+  opacity: 75%;
   font-weight: bold;
   justify-content: center;
   text-align: center;
