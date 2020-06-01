@@ -25,7 +25,9 @@ body {
   width: 90%;
   border-radius: 10px;
   justify-content: center;
+  animation: show 1s ease;
 }
+
 .subHead {
   display: block;
   margin-left: auto;
@@ -38,6 +40,7 @@ body {
   text-align: center;
   font-size: 28px;
   color: #1e7cb3;
+  animation: show 1s ease;
 }
 
 .topic h1 {
@@ -73,6 +76,17 @@ local style */
   justify-content: center;
   padding: 0 5px 0 5px;
   width: 90%;
+  animation: show 1s ease;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .localData {
@@ -121,7 +135,9 @@ local style */
   justify-content: center;
   padding: 0 5px 0 5px;
   width: 90%;
+  animation: show 2s ease;
 }
+
 .globalData {
   flex: 1;
   align-items: center;
