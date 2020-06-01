@@ -1,6 +1,6 @@
 import React, { useState, useLayoutEffect } from "react";
 import { Pie } from "react-chartjs-2";
-import styles from "./GlobalChart.module.css";
+import styles from "../styles.module.css";
 
 const Chart = ({ info: { data } }) => {
   //console.log(data);
@@ -27,8 +27,10 @@ const Chart = ({ info: { data } }) => {
   }, [data]);
 
   return (
-    <div className={styles.chart}>
-      <Pie data={chartData} width={500} height={500} options={{}} />
+    <div>
+      <div className={styles.chart}>
+        <Pie data={chartData} width={500} height={500} options={{}} />
+      </div>
     </div>
   );
 };

@@ -22,7 +22,7 @@ const Global = ({ info: { data } }) => {
         <h2>Global Covid Figures</h2>
       </div>
       <div className={styles.total}>
-        <i className="fas fa-hospital-user"></i>{" "}
+        <i className="fas fa-clinic-medical"></i>{" "}
         <span className={styles.label}>Total Cases</span>
       </div>
       <div className={styles.totalCount}>
@@ -34,7 +34,7 @@ const Global = ({ info: { data } }) => {
         />
       </div>
       <div className={styles.healthy}>
-        <i class="fas fa-street-view"></i>{" "}
+        <i className="fas fa-user-shield"></i>{" "}
         <span className={styles.label}>Total Recovered</span>
       </div>
       <div className={styles.healthyCount}>

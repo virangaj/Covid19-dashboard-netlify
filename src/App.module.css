@@ -42,6 +42,7 @@ body {
   font-size: 28px;
   color: #1e7cb3;
   animation: show 1s ease;
+  box-shadow: 0 0 4px -1px rgba(24, 120, 209, 0.582);
 }
 
 .topic h1 {
@@ -52,12 +53,23 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .topic i {
   background: linear-gradient(to right, #f5000096, #ff1313c0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: rotate 20s infinite linear;
 }
-
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
 /* 
 local style */
 .tabLocal {
@@ -94,7 +106,9 @@ local style */
     transform: translateY(0px);
   }
 }
-
+.localDaily,
+.globalDaily,
+.globalData,
 .localData {
   flex: 1;
   align-items: center;
@@ -103,18 +117,16 @@ local style */
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
 }
+.localData {
+  border-bottom: 10px solid #00ccff;
+}
 .localChart {
   flex: 1;
   align-items: center;
 }
 
 .localDaily {
-  flex: 1;
-  align-items: center;
-  border: 2px solid #00ccff;
   border-bottom: 10px solid #00ccff;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255);
 }
 /*------------------------------------------------------------*/
 /* 
@@ -145,12 +157,7 @@ local style */
 }
 
 .globalData {
-  flex: 1;
-  align-items: center;
-  border: 2px solid #00ccff;
   border-bottom: 10px solid #00ccff;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255);
 }
 .globalChart {
   flex: 1;
@@ -158,12 +165,7 @@ local style */
 }
 
 .globalDaily {
-  flex: 1;
-  align-items: center;
-  border: 2px solid #00ccff;
   border-bottom: 10px solid #00ccff;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255);
 }
 /*------------------------------------------------------------*/
 
@@ -255,6 +257,25 @@ local style */
 }
 
 /*-----------------------------*/
+.date {
+  text-align: center;
+  color: rgba(49, 49, 49, 0.829);
+  font-size: 20px;
+  font-weight: bold;
+  animation: show 1s ease;
+}
+.pcr {
+  border: 2px solid #04a2fd;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #006492;
+  width: 40%;
+  background-color: #04a2fd2d;
+  margin: 0 auto 50px;
+}
 
 @media only screen and (max-width: 1100px) {
   .tabGlobal,
@@ -266,6 +287,12 @@ local style */
   }
   .subHead {
     font-size: 25px;
+  }
+  .date {
+    font-size: 13px;
+  }
+  .pcr {
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 500px) {

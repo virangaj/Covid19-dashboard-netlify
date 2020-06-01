@@ -6,11 +6,13 @@
   margin-right: auto;
   width: 90%;
   padding-bottom: 10px;
+  box-shadow: 0 0 4px -1px rgba(52, 142, 226, 0.582);
 }
 .date {
   text-align: center;
   color: rgb(124, 124, 124);
-  font-size: 18px;
+  font-size: 16px;
+  padding-top: 5px;
 }
 @media only screen and (max-width: 1260px) {
   .date {

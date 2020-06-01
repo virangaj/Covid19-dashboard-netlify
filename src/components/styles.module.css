@@ -31,7 +31,7 @@
 
 .totalCount,
 .total {
-  color: #d8ab17e8;
+  color: #c49704c9;
 }
 
 .healthyCount,
@@ -79,7 +79,7 @@
   .deathCount,
   .activeCount,
   .newCasesCount {
-    font-size: 23px;
+    font-size: 25px;
   }
   .label {
     font-size: 16px;
@@ -96,13 +96,36 @@
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 1100px) {
+  .totalCount,
+  .healthyCount,
+  .deathCount,
+  .activeCount,
+  .newCasesCount {
+    font-size: 30px;
+  }
+  .label {
+    font-size: 18px;
+  }
+  .total,
+  .healthy,
+  .death,
+  .active,
+  .newCases {
+    font-size: 25px;
+    display: inline;
+  }
+  .container h2 {
+    font-size: 22px;
+  }
+}
 @media only screen and (max-width: 500px) {
   .totalCount,
   .healthyCount,
   .deathCount,
   .activeCount,
   .newCasesCount {
-    font-size: 18px;
+    font-size: 25px;
   }
   .label {
     font-size: 14px;
@@ -112,11 +135,11 @@
   .death,
   .active,
   .newCases {
-    font-size: 18px;
+    font-size: 20px;
     display: inline;
   }
   .container h2 {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 380px) {
@@ -133,5 +156,18 @@
   }
   .container h2 {
     font-size: 12px;
+  }
+}
+.chart {
+  width: 450px;
+}
+@media only screen and (max-width: 800px) {
+  .chart {
+    width: 370px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .chart {
+    width: 300px;
   }
 }

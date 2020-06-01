@@ -15,7 +15,7 @@ const Global = ({ info: { data } }) => {
         <h2>Global Daily Covid Figures</h2>
       </div>
       <div className={styles.newCases}>
-        <i class="fas fa-ambulance"></i>{" "}
+        <i className="fas fa-ambulance"></i>{" "}
         <span className={styles.label}>New Cases</span>
       </div>
       <div className={styles.newCasesCount}>

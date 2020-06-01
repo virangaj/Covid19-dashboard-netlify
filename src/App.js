@@ -34,39 +34,62 @@ class App extends React.Component {
             DASHBOARD
           </h1>
         </div>
+        <br />
+        <div className={styles.date}>
+          <p>LAST UPDATE : {this.state.info.data?.update_date_time}</p>
+        </div>
+
         <h2 className={styles.subHead}>Health Figures in Sri Lanka</h2>
         <br />
+
         <div className={styles.tabLocal}>
           <div className={styles.localData}>
             <Localdata info={this.state.info} />
           </div>
+
           <br />
           <div className={styles.localChart}>
             <LocalChart info={this.state.info} />
           </div>
+
           <br />
           <div className={styles.localDaily}>
             <Localdaily info={this.state.info} />
           </div>
+
           <br />
         </div>
+
+        <div className={styles.pcr}>
+          <p>
+            TOTAL PCR TESTS PERFORMED :{" "}
+            {this.state.info.data?.total_pcr_testing_count}
+          </p>
+        </div>
+
         {/* ------------------------------------------------------ */}
+
         <h2 className={styles.subHead}>Global Health Figures</h2>
         <br />
+
         <div className={styles.tabGlobal}>
           <div className={styles.globalData}>
             <Global info={this.state.info} />
           </div>
           <br />
+
           <div className={styles.globalChart}>
             <GlobalChart info={this.state.info} />
           </div>
           <br />
+
           <div className={styles.globalDaily}>
             <GlobalDaily info={this.state.info} />
           </div>
           <br />
         </div>
+
+        <br />
         {/* ------------------------------------------------------ */}
         {/* animation */}
         <div className={styles.animation_area}>

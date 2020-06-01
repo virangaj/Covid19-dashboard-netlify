@@ -17,7 +17,7 @@ const Localdaily = ({ info: { data } }) => {
         <h2>Local Daily Covid Figures</h2>
       </div>
       <div className={styles.newCases}>
-        <i class="fas fa-ambulance"></i>{" "}
+        <i className="fas fa-ambulance"></i>{" "}
         <span className={styles.label}>New Cases</span>
       </div>
       <div className={styles.newCasesCount}>
@@ -29,9 +29,7 @@ const Localdaily = ({ info: { data } }) => {
         />
       </div>
       <div className={styles.active}>
-        <div>
-          <i className="fas fa-procedures"></i>{" "}
-        </div>
+        <i className="fas fa-procedures"></i>{" "}
         <span className={styles.label}>Active Cases</span>
       </div>
       <div className={styles.activeCount}>
@@ -44,7 +42,7 @@ const Localdaily = ({ info: { data } }) => {
         - {active}%
       </div>
       <div className={styles.death}>
-        <i class="fas fa-bed"></i>{" "}
+        <i className="fas fa-bed"></i>{" "}
         <span className={styles.label}>New Death</span>
       </div>
       <div className={styles.deathCount}>
