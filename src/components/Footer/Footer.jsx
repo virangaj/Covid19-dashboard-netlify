@@ -12,9 +12,16 @@ const Footer = ({ info: { data } }) => {
     <div className={styles.footer}>
       <div className={styles.date}>
         <p>
-          Powered by :{" "}
-          <a href="https://www.hpb.health.gov.lk/api/get-current-statistical">
-            https://www.hpb.health.gov.lk/api/get-current-statistical
+          <i class="far fa-copyright"></i> All Rights Reserved |{" "}
+          <a href="https://imagezero.net" target="_blank">
+            ImageZerO
+          </a>{" "}
+          @2020 | Powered by :{" "}
+          <a
+            href="https://hpb.health.gov.lk/en/api-documentation"
+            target="_blank"
+          >
+            hpb.health.gov.lk
           </a>{" "}
         </p>
       </div>
