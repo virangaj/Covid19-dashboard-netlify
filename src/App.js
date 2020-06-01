@@ -34,7 +34,7 @@ class App extends React.Component {
             DASHBOARD
           </h1>
         </div>
-        <h2 className={styles.subHead}>Local Health Figures</h2>
+        <h2 className={styles.subHead}>Health Figures in Sri Lanka</h2>
 
         <div className={styles.tabLocal}>
           <div className={styles.localData}>
