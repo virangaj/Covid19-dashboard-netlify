@@ -146,16 +146,12 @@
   .totalCount,
   .healthyCount,
   .deathCount,
-  .total,
-  .healthy,
-  .death,
-  .active,
   .activeCount,
   .newCasesCount {
-    font-size: 14px;
+    font-size: 20px;
   }
   .container h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .chart {
