@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Localdaily.module.css";
+import styles from "../styles.module.css";
 import CountUp from "react-countup";
 
 const Localdaily = ({ info: { data } }) => {
@@ -16,11 +16,11 @@ const Localdaily = ({ info: { data } }) => {
       <div>
         <h2>Local Daily Covid Figures</h2>
       </div>
-      <div className={styles.total}>
-        <i className="fas fa-procedures"></i>{" "}
+      <div className={styles.newCases}>
+        <i class="fas fa-ambulance"></i>{" "}
         <span className={styles.label}>New Cases</span>
       </div>
-      <div className={styles.totalCount}>
+      <div className={styles.newCasesCount}>
         <CountUp
           start={0}
           end={data.local_new_cases}
@@ -28,11 +28,13 @@ const Localdaily = ({ info: { data } }) => {
           separator=","
         />
       </div>
-      <div className={styles.total}>
-        <i className="fas fa-procedures"></i>{" "}
+      <div className={styles.active}>
+        <div>
+          <i className="fas fa-procedures"></i>{" "}
+        </div>
         <span className={styles.label}>Active Cases</span>
       </div>
-      <div className={styles.totalCount}>
+      <div className={styles.activeCount}>
         <CountUp
           start={0}
           end={data.local_active_cases}
@@ -42,7 +44,7 @@ const Localdaily = ({ info: { data } }) => {
         - {active}%
       </div>
       <div className={styles.death}>
-        <i className="fas fa-heart-broken"></i>{" "}
+        <i class="fas fa-bed"></i>{" "}
         <span className={styles.label}>New Death</span>
       </div>
       <div className={styles.deathCount}>

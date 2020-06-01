@@ -1,0 +1,137 @@
+.container h2 {
+  color: grey;
+}
+
+.total,
+.healthy,
+.death,
+.active,
+.newCases {
+  font-size: 25px;
+  display: inline;
+}
+
+.label {
+  font-size: 18px;
+  color: grey;
+}
+.totalCount,
+.healthyCount,
+.deathCount,
+.activeCount,
+.newCasesCount {
+  font-size: 33px;
+  display: inline;
+}
+
+.newCasesCount,
+.newCases {
+  color: #d438ba;
+}
+
+.totalCount,
+.total {
+  color: #d8ab17e8;
+}
+
+.healthyCount,
+.healthy {
+  color: rgb(27, 187, 6);
+}
+.deathCount,
+.death {
+  color: #da2c0d;
+}
+.activeCount,
+.active {
+  color: #6b85de;
+}
+
+.container {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  animation: show 1s ease;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.container p {
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.topic h1 {
+  text-align: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 1300px) {
+  .totalCount,
+  .healthyCount,
+  .deathCount,
+  .activeCount,
+  .newCasesCount {
+    font-size: 23px;
+  }
+  .label {
+    font-size: 16px;
+  }
+  .total,
+  .healthy,
+  .death,
+  .active,
+  .newCases {
+    font-size: 22px;
+    display: inline;
+  }
+  .container h2 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .totalCount,
+  .healthyCount,
+  .deathCount,
+  .activeCount,
+  .newCasesCount {
+    font-size: 18px;
+  }
+  .label {
+    font-size: 14px;
+  }
+  .total,
+  .healthy,
+  .death,
+  .active,
+  .newCases {
+    font-size: 18px;
+    display: inline;
+  }
+  .container h2 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .totalCount,
+  .healthyCount,
+  .deathCount,
+  .total,
+  .healthy,
+  .death,
+  .active,
+  .activeCount,
+  .newCasesCount {
+    font-size: 14px;
+  }
+  .container h2 {
+    font-size: 12px;
+  }
+}

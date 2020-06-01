@@ -51,7 +51,6 @@ class App extends React.Component {
           <br />
         </div>
         {/* ------------------------------------------------------ */}
-
         <h2 className={styles.subHead}>Global Health Figures</h2>
         <br />
         <div className={styles.tabGlobal}>
@@ -97,6 +96,7 @@ class App extends React.Component {
         </div>
         {/* ------------------------------------------------------ */}
         <Footer info={this.state.info} />
+        <br />
       </div>
     );
   }

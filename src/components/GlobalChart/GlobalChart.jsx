@@ -20,7 +20,7 @@ const Chart = ({ info: { data } }) => {
             data?.global_recovered,
           ],
 
-          backgroundColor: ["rgb(20, 109, 187)", "#ff8484", "rgb(27, 187, 6)"],
+          backgroundColor: ["rgb(20, 109, 187)", "#da2c0d", "rgb(27, 187, 6)"],
         },
       ],
     });

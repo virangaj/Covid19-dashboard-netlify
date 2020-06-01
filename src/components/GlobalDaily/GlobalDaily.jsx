@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./GlobalDaily.module.css";
+import styles from "../styles.module.css";
 import CountUp from "react-countup";
 
 const Global = ({ info: { data } }) => {
@@ -14,11 +14,11 @@ const Global = ({ info: { data } }) => {
       <div>
         <h2>Global Daily Covid Figures</h2>
       </div>
-      <div className={styles.total}>
-        <i className="fas fa-procedures"></i>{" "}
+      <div className={styles.newCases}>
+        <i class="fas fa-ambulance"></i>{" "}
         <span className={styles.label}>New Cases</span>
       </div>
-      <div className={styles.totalCount}>
+      <div className={styles.newCasesCount}>
         <CountUp
           start={0}
           end={data.global_new_cases}
@@ -26,11 +26,11 @@ const Global = ({ info: { data } }) => {
           separator=","
         />
       </div>
-      <div className={styles.total}>
+      <div className={styles.active}>
         <i className="fas fa-procedures"></i>{" "}
         <span className={styles.label}>Active Cases</span>
       </div>
-      <div className={styles.totalCount}>
+      <div className={styles.activeCount}>
         <CountUp
           start={0}
           end={data.global_total_cases - data.global_recovered}
@@ -40,7 +40,7 @@ const Global = ({ info: { data } }) => {
       </div>
 
       <div className={styles.death}>
-        <i className="fas fa-heart-broken"></i>{" "}
+        <i className="fas fa-bed"></i>{" "}
         <span className={styles.label}>New Death</span>
       </div>
       <div className={styles.deathCount}>

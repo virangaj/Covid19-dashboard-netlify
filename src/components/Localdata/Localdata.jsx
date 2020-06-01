@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Localdata.module.css";
+import styles from "../styles.module.css";
 import CountUp from "react-countup";
 
 const Localdata = ({ info: { data } }) => {
@@ -12,7 +12,7 @@ const Localdata = ({ info: { data } }) => {
     (data?.local_recovered / data?.local_total_cases) *
     100
   ).toFixed(2);
-  console.log(death);
+  //console.log(death);
   return (
     <div className={styles.container}>
       <div>
@@ -31,7 +31,7 @@ const Localdata = ({ info: { data } }) => {
         />
       </div>
       <div className={styles.healthy}>
-        <i className="fas fa-heart"></i>{" "}
+        <i class="fas fa-street-view"></i>{" "}
         <span className={styles.label}>Total Recovered</span>
       </div>
       <div className={styles.healthyCount}>
@@ -45,7 +45,7 @@ const Localdata = ({ info: { data } }) => {
       </div>
 
       <div className={styles.death}>
-        <i className="fas fa-heart-broken"></i>{" "}
+        <i className="fas fa-bed"></i>{" "}
         <span className={styles.label}>Death</span>
       </div>
       <div className={styles.deathCount}>

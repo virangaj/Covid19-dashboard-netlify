@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./Global.module.css";
+import styles from "../styles.module.css";
 import CountUp from "react-countup";
 
 const Global = ({ info: { data } }) => {
@@ -15,7 +15,7 @@ const Global = ({ info: { data } }) => {
     (data?.global_recovered / data?.global_total_cases) *
     100
   ).toFixed(2);
-  console.log(death);
+  //console.log(death);
   return (
     <div className={styles.container}>
       <div>
@@ -34,7 +34,7 @@ const Global = ({ info: { data } }) => {
         />
       </div>
       <div className={styles.healthy}>
-        <i className="fas fa-heart"></i>{" "}
+        <i class="fas fa-street-view"></i>{" "}
         <span className={styles.label}>Total Recovered</span>
       </div>
       <div className={styles.healthyCount}>
@@ -48,7 +48,7 @@ const Global = ({ info: { data } }) => {
       </div>
 
       <div className={styles.death}>
-        <i className="fas fa-heart-broken"></i>{" "}
+        <i className="fas fa-bed"></i>{" "}
         <span className={styles.label}>Death</span>
       </div>
       <div className={styles.deathCount}>
