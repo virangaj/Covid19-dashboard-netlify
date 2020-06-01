@@ -96,16 +96,7 @@ local style */
   width: 90%;
   animation: show 1s ease;
 }
-@keyframes show {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
+
 .localDaily,
 .globalDaily,
 .globalData,
@@ -153,7 +144,7 @@ local style */
   justify-content: center;
   padding: 0 5px 0 5px;
   width: 90%;
-  animation: show 2s ease;
+  animation: show 2.5s ease;
 }
 
 .globalData {
@@ -275,8 +266,18 @@ local style */
   width: 40%;
   background-color: #04a2fd2d;
   margin: 0 auto 50px;
+  animation: show 1.5s ease;
 }
-
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 @media only screen and (max-width: 1100px) {
   .tabGlobal,
   .tabLocal {
