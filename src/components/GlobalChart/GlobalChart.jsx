@@ -6,30 +6,25 @@ const Chart = ({ info: { data } }) => {
   //console.log(data);
   //console.log(data?.local_new_cases);
 
-  const [chartData, setChartData] = useState(
-    useLayoutEffect(() => {
-      setChartData({
-        labels: ["Active", "Deaths", "Recovered"],
-        datasets: [
-          {
-            label: "Local Covid Patients",
+  const [chartData, setChartData] = useState("");
+  useLayoutEffect(() => {
+    setChartData({
+      labels: ["Active", "Deaths", "Recovered"],
+      datasets: [
+        {
+          label: "Local Covid Patients",
 
-            data: [
-              data?.global_total_cases - data?.global_recovered,
-              data?.global_deaths,
-              data?.global_recovered,
-            ],
+          data: [
+            data?.global_total_cases - data?.global_recovered,
+            data?.global_deaths,
+            data?.global_recovered,
+          ],
 
-            backgroundColor: [
-              "rgb(20, 109, 187)",
-              "#ff8484",
-              "rgb(27, 187, 6)",
-            ],
-          },
-        ],
-      });
-    }, [data])
-  );
+          backgroundColor: ["rgb(20, 109, 187)", "#ff8484", "rgb(27, 187, 6)"],
+        },
+      ],
+    });
+  }, [data]);
 
   return (
     <div className={styles.chart}>
