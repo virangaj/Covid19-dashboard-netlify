@@ -9,6 +9,7 @@ import {
   GlobalDaily,
   GlobalChart,
   Footer,
+  Map,
 } from "./components";
 
 import { fetchData } from "./api";
@@ -87,6 +88,11 @@ class App extends React.Component {
             <GlobalDaily info={this.state.info} />
           </div>
           <br />
+        </div>
+        <h2 className={styles.subHead}>Global Map Stats</h2>
+        <br />
+        <div className={styles.map}>
+          <Map />
         </div>
 
         <br />

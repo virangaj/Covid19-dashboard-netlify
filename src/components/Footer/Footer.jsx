@@ -12,7 +12,7 @@ const Footer = ({ info: { data } }) => {
     <div className={styles.footer}>
       <div className={styles.date}>
         <p>
-          <i class="far fa-copyright"></i> All Rights Reserved |{" "}
+          <i className="far fa-copyright"></i> All Rights Reserved |{" "}
           <a href="https://imagezero.net" target="_blank">
             ImageZerO
           </a>{" "}
