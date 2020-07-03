@@ -33,7 +33,7 @@ function Map() {
           borderRadius: "30%",
         }}
       >
-        <img height="10px" src={data.countryInfo.flag} />
+        <img height="10px" src={data.countryInfo.flag} alt="Flag" />
         <br />
         {data.cases}
       </div>
