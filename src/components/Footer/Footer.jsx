@@ -13,13 +13,18 @@ const Footer = ({ info: { data } }) => {
       <div className={styles.date}>
         <p>
           <i className="far fa-copyright"></i> All Rights Reserved |{" "}
-          <a href="https://imagezero.net" target="_blank">
+          <a
+            href="https://imagezero.net"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             ImageZerO
           </a>{" "}
           @2020 | Powered by :{" "}
           <a
             href="https://hpb.health.gov.lk/en/api-documentation"
             target="_blank"
+            rel="noopener noreferrer"
           >
             hpb.health.gov.lk
           </a>{" "}
