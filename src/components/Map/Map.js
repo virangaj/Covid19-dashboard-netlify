@@ -4,7 +4,7 @@ import GoogleMapReact from "google-map-react";
 import styles from "../styles.module.css";
 import mapStyle from "./MapStyle";
 function Map() {
-  // const [latest, setLatest] = useState([]);
+  const [latest, setLatest] = useState([]);
   const [result, setResult] = useState([]);
 
   useEffect(() => {
@@ -19,6 +19,7 @@ function Map() {
       });
   });
 
+  console.log(latest);
   const countriesLocations = result.map((data, i) => {
     return (
       <div
